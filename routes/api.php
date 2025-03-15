@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\LoansController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -13,3 +14,4 @@ Route::get('/user', function (Request $request) {
 Route::apiResource('categories', CategoryController::class);
 Route::apiResource('users', UserController::class);
 Route::apiResource('books', BookController::class);
+Route::apiResource('loans', controller: LoansController::class);

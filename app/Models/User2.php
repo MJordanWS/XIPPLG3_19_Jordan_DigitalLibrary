@@ -18,4 +18,9 @@ class User2 extends Model
     {
         return $this->hasMany(Books::class);
     }
+
+    public function loans()
+    {
+        return $this->hasMany(loans::class);
+    }
 }
