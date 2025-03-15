@@ -13,4 +13,9 @@ class User2 extends Model
         'username',
         'phone',
     ];
+
+    public function books()
+    {
+        return $this->hasMany(Books::class);
+    }
 }
