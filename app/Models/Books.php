@@ -29,4 +29,9 @@ class Books extends Model
     {
         return $this->hasMany(loans::class);
     }
+
+    public function review()
+    {
+        return $this->hasMany(Reviews::class);
+    }
 }
